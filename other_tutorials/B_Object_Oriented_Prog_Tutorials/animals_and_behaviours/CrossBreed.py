@@ -2,7 +2,7 @@ from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.Bla
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.Eagle import Eagle
 
 
-class CrossBread(BlackSparrow, Eagle):
+class CrossBreed(BlackSparrow, Eagle):
 
     def __init__(self, age, name):
         print("Inside constructor of CrossBread class")
@@ -11,6 +11,14 @@ class CrossBread(BlackSparrow, Eagle):
         print('Overriden method called from the concrete class CrossBread')
         # Method Resolution Order Algorithm implementation
         super().calculate_random_age()
+
+    """
+    In Python, static methods are used when we don't want subclasses of a class to change
+    or override a specific implementation of a method
+    """
+    @staticmethod
+    def has_disorder() -> bool:
+        return True
 
 
 """
@@ -36,7 +44,3 @@ the __init__ method
 Python3 uses the so-called Method Resolution Order (MRO) which is based on
 the "C3 superclass linearisation" algorithm to solve the diamond problem
 """
-
-
-
-

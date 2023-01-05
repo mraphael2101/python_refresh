@@ -1,6 +1,6 @@
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.Bird import Bird
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.BlackSparrow import BlackSparrow
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.CrossBread import CrossBread
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.CrossBreed import CrossBreed
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.Eagle import Eagle
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.ICanFly import InformalInterfaceICanFly
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.IHop import FormalInterfaceIHop
@@ -52,7 +52,7 @@ def inheriting_from_a_concrete_class_and_method_overriding():
 
 def multi_level_inheritance_via_classes():
     # https://python-course.eu/oop/multiple-inheritance.php
-    cb = CrossBread(2, "Mr Sweets")
+    cb = CrossBreed(2, "Mr Sweets")
     cb.calculate_random_age()
 
 

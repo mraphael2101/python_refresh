@@ -1,15 +1,6 @@
 """
 Polymorphism allows us to access overridden methods and attributes that have
 the same name as the parent class.
-
-Python is a dynamic language as it supports Duck typing which allows us to
-use any object that provides the required behaviour without forcing it to
-be a subclass i.e. when multiple-inheritance appears to be a valid solution we
-can use duck typing to mimic one of the multiple superclasses
-
-Python reduces the need for Polymorphic objects as a result of the above.
-Another flexible characteristic about Duck typing is that it only needs to
-fulfill the interface that is actually accessed and not the entire interface
 """
 
 
@@ -37,6 +28,18 @@ class WavFile(AudioFile):
 
     def play(self):
         print("Playing {} as wav".format(self.filename))
+
+
+"""
+Python is a dynamic language as it supports Duck typing which allows us to
+use any object that provides the required behaviour without forcing it to
+be a subclass i.e. when multiple-inheritance appears to be a valid solution we
+can use duck typing to mimic one of the multiple superclasses
+
+Python reduces the need for Polymorphic objects as a result of the above.
+Another flexible characteristic about Duck typing is that it only needs to
+fulfill the interface that is actually accessed and not the entire interface
+"""
 
 
 class OggFile:

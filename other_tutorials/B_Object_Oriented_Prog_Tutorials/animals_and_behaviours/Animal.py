@@ -9,6 +9,7 @@ This is how you define one. The example also demonstrates Constructor Overloadin
 
 
 class Animal(ABC):
+
     def __init__(self, age, name=None):
         print("Inside constructor of the Animal class")
         self.age = age

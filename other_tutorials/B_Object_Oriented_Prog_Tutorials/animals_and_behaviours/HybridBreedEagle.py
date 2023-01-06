@@ -1,8 +1,13 @@
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.BlackSparrow import BlackSparrow
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.Eagle import Eagle
+from random import random
+
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.ClangaClangaEagle import ClangaClangaEagle
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.CPomarinaEagle import CPomarinaEagle
 
 
-class CrossBreed(BlackSparrow, Eagle):
+class HybridBreed(ClangaClangaEagle, CPomarinaEagle):
+
+    # Example of a static variable declaration in Python
+    cross_breed_type = 'Hybrid Breed Eagle'
 
     def __init__(self, age, name):
         print("Inside constructor of CrossBread class")
@@ -18,7 +23,16 @@ class CrossBreed(BlackSparrow, Eagle):
     """
     @staticmethod
     def has_disorder() -> bool:
-        return True
+        disorder_list = []
+        if random() >= 0.6:
+            print("Has one or more disorders -> True")
+            disorder_list = ['heart disease']
+            print("disorder_list -> " + str(disorder_list))
+            return True
+        else:
+            print("Has one or more disorders -> False")
+            print("disorder_list -> " + str(disorder_list))
+            return False
 
 
 """

@@ -1,6 +1,6 @@
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.Bird import Bird
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.ClangaClangaEagle import ClangaClangaEagle
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.HybridBreedEagle import HybridBreed
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.HybridBreedEagle import HybridBreedEagle
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.CPomarinaEagle import CPomarinaEagle
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.ICanFly import InformalInterfaceICanFly
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.IHop import FormalInterfaceIHop
@@ -19,8 +19,8 @@ Examples of:
 
 
 def main():
-    # inheriting_from_a_concrete_class_and_method_overriding()
     inheriting_from_a_concrete_class_method_overriding_constructor_overloading()
+    # inheriting_from_a_concrete_class_and_method_overriding()
     # inheriting_from_an_abstract_class_and_method_overriding()
     # multi_level_inheritance_via_classes()
     # concrete_class_method_overrides_single_informal_interface_method()
@@ -53,8 +53,8 @@ def inheriting_from_a_concrete_class_and_method_overriding():
 
 def multi_level_inheritance_via_classes():
     # https://python-course.eu/oop/multiple-inheritance.php
-    cb = HybridBreed(2, "Aldrin")
-    print("CrossBreed Type -> " + HybridBreed.cross_breed_type)
+    cb = HybridBreedEagle(2, "Aldrin")
+    print("CrossBreed Type -> " + HybridBreedEagle.hybrid_breed_type_alias)
     cb.calculate_random_age()
     cb.has_disorder()
 

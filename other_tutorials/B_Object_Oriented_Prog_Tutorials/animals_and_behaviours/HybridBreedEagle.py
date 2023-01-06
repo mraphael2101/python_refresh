@@ -3,11 +3,13 @@ from random import random
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.ClangaClangaEagle import ClangaClangaEagle
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.CPomarinaEagle import CPomarinaEagle
 
+# https://avianhybrids.wordpress.com/2019/01/22/how-healthy-are-juvenile-eagle-hybrids
 
-class HybridBreed(ClangaClangaEagle, CPomarinaEagle):
+
+class HybridBreedEagle(ClangaClangaEagle, CPomarinaEagle):
 
     # Example of a static variable declaration in Python
-    cross_breed_type = 'Hybrid Breed Eagle'
+    hybrid_breed_type_alias = 'Lesser Spotted Eagle'
 
     def __init__(self, age, name):
         print("Inside constructor of CrossBread class")

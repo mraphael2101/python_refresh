@@ -13,8 +13,8 @@ class CrossBreed(BlackSparrow, Eagle):
         super().calculate_random_age()
 
     """
-    In Python, static methods are used when we don't want subclasses of a class to change
-    or override a specific implementation of a method
+    In Python, static methods are used when we don't want subclasses of a 
+    class to change or override a specific implementation of a method
     """
     @staticmethod
     def has_disorder() -> bool:

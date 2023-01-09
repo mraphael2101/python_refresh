@@ -28,15 +28,17 @@ def main():
 
 
 def inheriting_from_a_concrete_class_method_overriding_constructor_overloading():
+    # print_base_class_method() # function not accessible as it is not part of the inherited class
+
     myCar = Car('Blue')
-    # myCar.print_colour()
-    # myCar.print_colour('#F767DSG')
+    myCar.print_colour()
+    myCar.print_colour('#F767DSG')
 
-    # myFord = Ford()  # Default Constructor
-    # myFord.print_colour()  # Accessing a class/static variable
+    myFord = Ford()  # Default Constructor
+    myFord.print_colour()  # Accessing a class/static variable
 
-    # yourFord = Ford("Orange")  # Parameterised Constructor
-    # yourFord.print_colour('#F99999')  # Method Overriding
+    yourFord = Ford("Orange")  # Parameterised Constructor
+    yourFord.print_colour('#F99999')  # Method Overriding
 
 
 def inheriting_from_an_abstract_class_and_method_overriding():

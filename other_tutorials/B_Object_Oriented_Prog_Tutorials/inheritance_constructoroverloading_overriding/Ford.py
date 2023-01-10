@@ -1,15 +1,10 @@
 from other_tutorials.B_Object_Oriented_Prog_Tutorials import Car
 
-"""
-- In this example, class Ford is inheriting from class Car
-- In Python it is not necessary to have multiple constructors like you do in Java, C#, or TS
-"""
 
-
+# Below, class Ford is inheriting from class Car, and we can say that a Ford 'is a' Car
 class Ford(Car):
 
-    # In Python, the below line of code is how to go about constructor overloading
-    def __init__(self, paint_colour="Black"):
+    def __init__(self, paint_colour="Black"):  # constructor overloading
         Car.__init__(self, paint_colour)
 
     # This derived class method overrides the base class method

@@ -1,16 +1,23 @@
 from abc import ABC, abstractmethod
 
 """
-1) Abstract base classes define a set of methods and properties that a class must
-implement in order to be considered a Duck-type instance of that class.
-2) Use abc module support framework as an enabler to implement Abstract Base Classes
-This is how you define one. The example also demonstrates Constructor Overloading
+- Use the abc module support framework as an enabler to implement Abstract Base Classes
+- Abstraction is an OO term related to encapsulation and information hiding
+- Abstraction means dealing with the level of detail that is most appropriate for 
+  a given task
+- It is the process of extracting a public interface from the inner details
+- It is the process of encapsulating information with separate public and 
+  private interfaces. The private interfaces can be subject to information hiding
+- Our models should be understandable to other objects that interact with them  
+
+- In the case of Animals, it doesn't really make sense to provide a default implementation
+  of the below methods
 """
 
 
 class Animal(ABC):
 
-    def __init__(self, age, name=None):
+    def __init__(self, age, name=None):  # Constructor overloading
         print("Inside constructor of the Animal class")
         self.age = age
         self.name = name
@@ -30,9 +37,3 @@ class Animal(ABC):
     @abstractmethod
     def generate_security_code(self) -> int:
         return 1111
-
-    def get_age(self):
-        return self.age
-
-    def set_age(self, val):
-        self.age = val

@@ -1,21 +1,18 @@
 from random import random
 
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.ClangaClangaEagle import ClangaClangaEagle
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.CPomarinaEagle import CPomarinaEagle
-
-# https://avianhybrids.wordpress.com/2019/01/22/how-healthy-are-juvenile-eagle-hybrids
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.BlackGrouse import BlackGrouse
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.HazelGrouse import HazelGrouse
 
 
-class HybridBreedEagle(ClangaClangaEagle, CPomarinaEagle):
+class HybridPheasant(BlackGrouse, HazelGrouse):
 
-    # Example of a static variable declaration in Python
-    hybrid_breed_type_alias = 'Lesser Spotted Eagle'
+    combination_characteristics = []   # static variable
 
     def __init__(self, age, name):
-        print("Inside constructor of CrossBread class")
+        print("Inside constructor of HybridPheasant class")
 
     def calculate_random_age(self) -> None:
-        print('Overriden method called from the concrete class CrossBread')
+        print('Overriden method called from the concrete class HybridPheasant')
         # Method Resolution Order Algorithm implementation
         super().calculate_random_age()
 

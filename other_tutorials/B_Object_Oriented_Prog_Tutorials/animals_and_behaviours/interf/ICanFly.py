@@ -11,6 +11,7 @@ that can be optionally implemented. This feature is often used for small project
 that have a small code base and limited no of programmers
 """
 
+
 class InformalInterfaceICanFly:
     def ascend(self, altitude: float) -> float:
         pass

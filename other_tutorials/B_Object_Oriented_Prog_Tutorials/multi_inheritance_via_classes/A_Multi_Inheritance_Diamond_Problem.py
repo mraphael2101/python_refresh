@@ -1,4 +1,12 @@
-# https://python-course.eu/oop/multiple-inheritance.php
+"""
+https://python-course.eu/oop/multiple-inheritance.php
+The "diamond problem" is the generally used term for an ambiguity that arises when two
+classes B and C inherit from a superclass A, and another class D inherits from both B and C
+
+If there is a method "m" in A that B or C (or even both of them) has overridden,
+and furthermore, if it does not override this method, then the question is which version
+of the method does D inherit?
+"""
 
 
 class A:
@@ -25,11 +33,6 @@ class D(B, C):
         C.m(self)
 
 
-def main():
-    x = D()
-    x.m()
-
-
 if __name__ == "__main__":
-    # Diamond Bug: We have to take away the call A.m(self) from m in D
-    main()
+    x = D()
+    x.m()  # Diamond Bug -> method m of A will be called twice

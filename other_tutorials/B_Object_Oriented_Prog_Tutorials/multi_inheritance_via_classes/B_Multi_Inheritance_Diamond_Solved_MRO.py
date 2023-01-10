@@ -32,7 +32,7 @@ class D(B, C):
 
 
 if __name__ == "__main__":
-    # A clean solution to the Diamond problem (Redundant call is removed)
+    # A clean solution to the Diamond problem which removes the redundant call
     D().m()
     # C().m()
     # B().m()

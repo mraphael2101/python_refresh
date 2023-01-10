@@ -1,5 +1,5 @@
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.Bird import Bird
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interf.IHop import FormalInterfaceIHop
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.Bird import Bird
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interfaces.IHop import FormalInterfaceIHop
 
 
 class HazelGrouse(Bird, FormalInterfaceIHop):

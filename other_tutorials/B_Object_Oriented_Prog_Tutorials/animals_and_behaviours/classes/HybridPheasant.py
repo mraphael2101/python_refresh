@@ -1,7 +1,7 @@
 from random import random
 
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.BlackGrouse import BlackGrouse
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.HazelGrouse import HazelGrouse
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.BlackGrouse import BlackGrouse
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.HazelGrouse import HazelGrouse
 
 
 class HybridPheasant(BlackGrouse, HazelGrouse):

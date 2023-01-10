@@ -1,10 +1,10 @@
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.Bird import Bird
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interf.ICanFly import InformalInterfaceICanFly
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.Bird import Bird
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interfaces.ICanFly import InformalInterfaceICanFly
 
 
 class BlackGrouse(Bird, InformalInterfaceICanFly):
     """
-    BlackGrouse is a concrete class (a subclass of Bird && it implements the
+    BlackGrouse is a concrete class (a subclass of Bird and also implements the
     InformalInterfaceICanFly which provides an implementation of the interface’s methods)
     """
 

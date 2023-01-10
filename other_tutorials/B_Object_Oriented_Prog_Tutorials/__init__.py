@@ -1,30 +1,23 @@
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.Bird import Bird
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.BlackGrouse import BlackGrouse
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.HybridPheasant import HybridPheasant
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.clas.HazelGrouse import HazelGrouse
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interf.ICanFly import InformalInterfaceICanFly
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interf.IHop import FormalInterfaceIHop
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.Bird import Bird
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.BlackGrouse import BlackGrouse
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.HybridPheasant \
+    import HybridPheasant
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.HazelGrouse import HazelGrouse
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interfaces.ICanFly \
+    import InformalInterfaceICanFly
+from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interfaces.IHop import FormalInterfaceIHop
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.inheritance_constructoroverloading_overriding.Car import Car, \
     print_base_class_method
 from other_tutorials.B_Object_Oriented_Prog_Tutorials.inheritance_constructoroverloading_overriding.Ford import Ford
-
-"""
-Examples of:
- - Inheritance and Multi-Level Inheritance via Classes,
- - Informal and Formal Interfaces,
- - Method Overriding,
- - Method Overloading,
- - Constructor Overloading
-"""
 
 
 def main():
     # inheriting_from_a_concrete_class_method_overriding_constructor_overloading()
     # inheriting_from_a_concrete_class_and_method_overriding()
-    inheriting_from_an_abstract_class_and_method_overriding()
+    # inheriting_from_an_abstract_class_and_method_overriding()
     # multi_level_inheritance_via_classes()
     # concrete_class_method_overrides_single_informal_interface_method()
-    # concrete_class_method_overrides_all_formal_interface_methods()
+    concrete_class_method_overrides_all_formal_interface_methods()
 
 
 def inheriting_from_a_concrete_class_method_overriding_constructor_overloading():
@@ -54,7 +47,6 @@ def inheriting_from_a_concrete_class_and_method_overriding():
 
 
 def multi_level_inheritance_via_classes():
-    # https://python-course.eu/oop/multiple-inheritance.php
     cb = HybridPheasant(2, "Aldrin")
     cb.combination_characteristics.append('Lesser Spotted Pheasant')
     print("HybridPheasant characteristics -> " + str(HybridPheasant.combination_characteristics))
@@ -63,7 +55,7 @@ def multi_level_inheritance_via_classes():
 
 
 def concrete_class_method_overrides_single_informal_interface_method():
-    bs = BlackGrouse(2, "Mr Sparrow")
+    bs = BlackGrouse(2, "Spock")
     bs.ascend(0.01)
     # Returns true if the concrete class implements only some of the informal interface's methods
     print(issubclass(BlackGrouse, InformalInterfaceICanFly))
@@ -72,7 +64,7 @@ def concrete_class_method_overrides_single_informal_interface_method():
 
 
 def concrete_class_method_overrides_all_formal_interface_methods():
-    ea = HazelGrouse(2, "Mr Hawks")
+    ea = HazelGrouse(2, "Haze")
     ea.get_average_hop_height()
     ea.get_max_hop_height()
     """

@@ -15,10 +15,10 @@ very strong preference for privacy
 
 class FormalInterfaceIHop(abc.ABC):
     """
-    A formal interface that will raise errors when the abstract methods
+    A formal interface will raise errors when the abstract methods
     aren’t overridden
     Note that the interface itself cannot be instantiated, which means
-    that we cannot create the object of the interface
+    that we cannot create an object of the interface
     """
     @classmethod
     def __subclasshook__(cls, subclass):

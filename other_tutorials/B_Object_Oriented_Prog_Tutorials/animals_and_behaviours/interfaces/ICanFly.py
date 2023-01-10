@@ -1,14 +1,17 @@
 """
-Interfaces in Python are handled differently than in most other languages.
-Python does not have an interface keyword like in Java, C# or TS.
-
 Python interfaces are used to help determine what class you should use to
 tackle the current problem and to avoid confusion from having similar classes
 which are unrelated
 
+In OOP, an Interface is a description of all functions that an object must have
+in order to be an "X"
+
+Interfaces in Python are handled differently than in most other languages.
+Python does not have an interface keyword
+
 Python has an Informal interfaces concept which is when a class defines methods
-that can be optionally implemented. This feature is often used for small projects
-that have a small code base and limited no of programmers
+that can be optionally implemented. This feature is often used for smaller projects
+that have a small code base and a limited no of programmers
 """
 
 
@@ -29,10 +32,4 @@ That said, there are still several uses for interfaces. Some of them are covered
 Abstract Base Classes, which are useful if you want to make base classes that cannot be 
 instantiated, but provide a specific interface or part of an implementation.
 
-Another usage is if you somehow want to specify that an object implements a specific 
-interface, and you can use ABC's for that too by subclassing from them. Another way 
-is zope.interface, a module that is a part of the Zope Component Architecture, 
-a really awesomely cool component framework. Here you don't subclass from the interfaces, 
-but instead mark classes (or even instances) as implementing an interface. This can also 
-be used to look up components from a component registry. Supercool!
 """

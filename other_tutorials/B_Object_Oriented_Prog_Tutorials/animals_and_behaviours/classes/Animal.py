@@ -9,6 +9,9 @@ from abc import ABC, abstractmethod
 - It is the process of encapsulating information with separate public and 
   private interfaces. The private interfaces can be subject to information hiding
 - Our models should be understandable to other objects that interact with them  
+- Abstract base classes define a set of methods and properties that a class must implement
+  in order to be considered a duck-type instance of that class, but it must supply all the 
+  appropriate methods (no inheritance required which is the benefit)
 
 - In the case of Animals, it doesn't really make sense to provide a default implementation
   of the below methods

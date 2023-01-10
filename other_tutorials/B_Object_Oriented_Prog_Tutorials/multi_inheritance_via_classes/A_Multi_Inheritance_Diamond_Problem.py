@@ -1,3 +1,6 @@
+# https://python-course.eu/oop/multiple-inheritance.php
+
+
 class A:
     def m(self):
         print("m of A called")

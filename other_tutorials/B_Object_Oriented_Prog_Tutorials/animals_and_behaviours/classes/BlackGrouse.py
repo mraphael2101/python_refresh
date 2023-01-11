@@ -16,7 +16,7 @@ class BlackGrouse(Bird, InformalInterfaceICanFly):
     def calculate_random_age(self) -> None:
         self.age = 0
         print('Overriden method from concrete class Bird. Called in class BlackGrouse -> age {}'.format(self.age))
-        super(BlackGrouse, self).calculate_random_age()
+        super().calculate_random_age()
 
     def ascend(self, altitude: float) -> float:
         print("Overriden method (1 of 2) from InformalInterfaceICanFly class")

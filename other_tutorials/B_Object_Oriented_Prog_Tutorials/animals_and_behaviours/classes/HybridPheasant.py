@@ -13,8 +13,14 @@ class HybridPheasant(BlackGrouse, HazelGrouse):
 
     def calculate_random_age(self) -> None:
         print('Overriden method called from the concrete class HybridPheasant')
-        # Method Resolution Order Algorithm implementation
+        """
+        Method Resolution Order Algorithm implementation: 
+        When we search for an attribute in a class that is involved in python multiple inheritance, 
+        an order is followed. First, it is searched in the current class. If not found, the search 
+        moves to parent classes. This is left-to-right, depth-first
+        """
         super().calculate_random_age()
+        # super(HazelGrouse, self).calculate_random_age()   # Proving this inheritance starts from HazelGrouse level
 
     """
     In Python, static methods are used when we don't want subclasses of a 

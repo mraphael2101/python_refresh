@@ -20,14 +20,23 @@ from abc import ABC, abstractmethod
 
 class Animal(ABC):
 
+    """
+     Prefixing a variable name with:
+        __ denotes it as a private access modifier
+        _ denotes it as a protected access modifier (available to sub-classes)
+        specifying nothing denotes it as a public access modifier
+    """
+    __age = None
+    __name = None
+
     def __init__(self, age, name=None):  # Constructor overloading
         print("Inside constructor of the Animal class")
-        self.age = age
-        self.name = name
-        if self.name is not None and self.name != "":
+        self.__age = age
+        self.__name = name
+        if self.__name is not None and self.__name != "":
             print("A derived class of Animal now exists with the name {}".format(self.name))
         else:
-            self.name = "Default Firstname Lastname"
+            self.__name = "Default Firstname Lastname"
             print("A derived class of Animal now exists without a name. Assigning a default name")
         super().__init__()
 

@@ -9,14 +9,6 @@ class BlackGrouse(Bird, InformalInterfaceICanFly):
     which provides an implementation of the interface’s methods
     """
 
-    """
-     Prefixing a variable name with:
-        __ denotes it as a private access modifier
-        _ denotes it as a protected access modifier (available to sub-classes)
-        specifying nothing denotes it as a public access modifier
-    """
-    __age = None
-
     def __init__(self, age, name):
         self.__age = age
         print("Inside constructor of BlackGrouse class")

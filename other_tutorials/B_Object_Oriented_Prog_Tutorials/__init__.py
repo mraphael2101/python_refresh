@@ -13,11 +13,11 @@ from other_tutorials.B_Object_Oriented_Prog_Tutorials.inheritance_constructorove
 
 def main():
     # inheriting_from_a_concrete_class_method_overriding_constructor_overloading()
-    # inheriting_from_a_concrete_class_and_method_overriding()
+    inheriting_from_a_concrete_class_and_method_overriding()
     # inheriting_from_an_abstract_class_and_method_overriding()
-    # multi_level_inheritance_via_classes()
     # concrete_class_method_overrides_single_informal_interface_method()
-    concrete_class_method_overrides_all_formal_interface_methods()
+    # concrete_class_method_overrides_all_formal_interface_methods()
+    # multi_level_inheritance_via_classes()
 
 
 def inheriting_from_a_concrete_class_method_overriding_constructor_overloading():

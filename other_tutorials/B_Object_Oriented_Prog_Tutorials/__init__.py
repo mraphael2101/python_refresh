@@ -14,7 +14,7 @@ from other_tutorials.B_Object_Oriented_Prog_Tutorials.inheritance_constructorove
 def main():
     constructor_overloading_demo()
     encapsulation_demo()
-    inheriting_from_an_abstract_class_and_method_overriding() # overriding and overloading
+    inheriting_from_an_abstract_class_and_method_overriding_and_overloading()
     inheriting_from_a_concrete_class_and_method_overriding()
     concrete_class_method_overrides_single_informal_interface_method()
     concrete_class_method_overrides_all_formal_interface_methods()
@@ -42,7 +42,7 @@ def encapsulation_demo():
     # print(b_grouse.__age)  # Throws Error -> 'BlackGrouse' object has no attribute 'age'
 
 
-def inheriting_from_an_abstract_class_and_method_overriding():
+def inheriting_from_an_abstract_class_and_method_overriding_and_overloading():
     derived_class = Bird(1, "Mr Beaks")
     derived_class.calculate_random_age()  # Overriding an abstract method
     derived_class.generate_security_code(3333)  # Overloading an abstract method

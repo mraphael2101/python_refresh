@@ -22,6 +22,10 @@ class BlackGrouse(Bird, InformalInterfaceICanFly):
         print("Overriden method (1 of 2) from InformalInterfaceICanFly class")
         return 1.01
 
+    """
+    Encapsulation prevents unwanted access to sensitive data and hide information through access modifiers 
+    while also reducing erroneous human changes
+    """
     def get_age(self):
         return self.age
 

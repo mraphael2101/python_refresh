@@ -12,7 +12,7 @@ from other_tutorials.B_Object_Oriented_Prog_Tutorials.inheritance_constructorove
 
 
 def main():
-    # inheriting_from_a_concrete_class_method_overriding_constructor_overloading()
+    # constructor_overloading_demo()
     encapsulation_demo()
     # inheriting_from_an_abstract_class_and_method_overriding()
     # inheriting_from_a_concrete_class_and_method_overriding()
@@ -21,7 +21,7 @@ def main():
     # multi_level_inheritance_via_classes()
 
 
-def inheriting_from_a_concrete_class_method_overriding_constructor_overloading():
+def constructor_overloading_demo():
     # print_base_class_method() # function not accessible as it is not part of the inherited class
 
     myCar = Car('Blue')

@@ -12,13 +12,13 @@ from other_tutorials.B_Object_Oriented_Prog_Tutorials.inheritance_constructorove
 
 
 def main():
-    # constructor_overloading_demo()
+    constructor_overloading_demo()
     encapsulation_demo()
-    # inheriting_from_an_abstract_class_and_method_overriding()
-    # inheriting_from_a_concrete_class_and_method_overriding()
-    # concrete_class_method_overrides_single_informal_interface_method()
-    # concrete_class_method_overrides_all_formal_interface_methods()
-    # multi_level_inheritance_via_classes()
+    inheriting_from_an_abstract_class_and_method_overriding() # overriding and overloading
+    inheriting_from_a_concrete_class_and_method_overriding()
+    concrete_class_method_overrides_single_informal_interface_method()
+    concrete_class_method_overrides_all_formal_interface_methods()
+    multi_level_inheritance_via_classes()
 
 
 def constructor_overloading_demo():
@@ -37,8 +37,9 @@ def constructor_overloading_demo():
 
 def encapsulation_demo():
     b_grouse = BlackGrouse(0, "Reeve")
-    b_grouse.set_age(5)
+    b_grouse.set_age(10)
     print("Reeve's age is -> " + str(b_grouse.get_age()))
+    # print(b_grouse.__age)  # Throws Error -> 'BlackGrouse' object has no attribute 'age'
 
 
 def inheriting_from_an_abstract_class_and_method_overriding():

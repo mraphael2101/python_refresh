@@ -21,6 +21,6 @@ class Bird(Animal):
         print('Overriden abstract method from concrete class Bird -> age {}'.format(self.age))
 
     # Overloading the abstract method declaration
-    def generate_security_code(self, default_code) -> int:
+    def generate_security_code(self, default_code=1111) -> int:
         print('Overloaded method. Security Code {}'.format(default_code))
         return default_code

@@ -72,8 +72,8 @@ def main():
     mp3.play()
     wav = WavFile("myfile.wav")
     wav.play()
-    # ogg = OggFile("myfile.error")
-    # ogg.play()
+    ogg = OggFile("myfile.error")
+    ogg.play()
 
 
 if __name__ == "__main__":

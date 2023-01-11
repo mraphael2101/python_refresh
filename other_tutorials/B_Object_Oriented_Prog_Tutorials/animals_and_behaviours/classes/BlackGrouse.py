@@ -9,13 +9,21 @@ class BlackGrouse(Bird, InformalInterfaceICanFly):
     which provides an implementation of the interface’s methods
     """
 
+    """
+     Prefixing a variable name with:
+        __ denotes it as a private access modifier
+        _ denotes it as a protected access modifier (available to sub-classes)
+        specifying nothing denotes it as a public access modifier
+    """
+    __age = None
+
     def __init__(self, age, name):
-        self.age = age
+        self.__age = age
         print("Inside constructor of BlackGrouse class")
 
     def calculate_random_age(self) -> None:
-        self.age = 0
-        print('Overriden method from concrete class Bird. Called in class BlackGrouse -> age {}'.format(self.age))
+        self.__age = 0
+        print('Overriden method from concrete class Bird. Called in class BlackGrouse -> age {}'.format(self.__age))
         super().calculate_random_age()
 
     def ascend(self, altitude: float) -> float:
@@ -27,7 +35,7 @@ class BlackGrouse(Bird, InformalInterfaceICanFly):
     while also reducing erroneous human changes
     """
     def get_age(self):
-        return self.age
+        return self.__age
 
     def set_age(self, val):
-        self.age = val
+        self.__age = val

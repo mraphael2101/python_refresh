@@ -13,8 +13,9 @@ from other_tutorials.B_Object_Oriented_Prog_Tutorials.inheritance_constructorove
 
 def main():
     # inheriting_from_a_concrete_class_method_overriding_constructor_overloading()
-    inheriting_from_a_concrete_class_and_method_overriding()
+    encapsulation_demo()
     # inheriting_from_an_abstract_class_and_method_overriding()
+    # inheriting_from_a_concrete_class_and_method_overriding()
     # concrete_class_method_overrides_single_informal_interface_method()
     # concrete_class_method_overrides_all_formal_interface_methods()
     # multi_level_inheritance_via_classes()
@@ -34,6 +35,12 @@ def inheriting_from_a_concrete_class_method_overriding_constructor_overloading()
     yourFord.print_colour('#F99999')  # Method Overriding
 
 
+def encapsulation_demo():
+    b_grouse = BlackGrouse(0, "Reeve")
+    b_grouse.set_age(5)
+    print("Reeve's age is -> " + str(b_grouse.get_age()))
+
+
 def inheriting_from_an_abstract_class_and_method_overriding():
     derived_class = Bird(1, "Mr Beaks")
     derived_class.calculate_random_age()  # Overriding an abstract method
@@ -41,22 +48,22 @@ def inheriting_from_an_abstract_class_and_method_overriding():
 
 
 def inheriting_from_a_concrete_class_and_method_overriding():
-    b_spar = BlackGrouse(0, "Reeve")
+    reeve = BlackGrouse(0, "Reeve")
     # Has additional super() call due to multi-inheritance example
-    b_spar.calculate_random_age()
+    reeve.calculate_random_age()
 
 
 def multi_level_inheritance_via_classes():
-    cb = HybridPheasant(2, "Aldrin")
-    cb.combination_characteristics.append('Lesser Spotted Pheasant')
+    hp = HybridPheasant(2, "Aldrin")
+    hp.combination_characteristics.append('Lesser Spotted Pheasant')
     print("HybridPheasant characteristics -> " + str(HybridPheasant.combination_characteristics))
-    cb.calculate_random_age()
-    cb.has_disorder()
+    hp.calculate_random_age()
+    hp.has_disorder()
 
 
 def concrete_class_method_overrides_single_informal_interface_method():
-    bs = BlackGrouse(2, "Spock")
-    bs.ascend(0.01)
+    bg = BlackGrouse(2, "Spock")
+    bg.ascend(0.01)
     # Returns true if the concrete class implements only some of the informal interface's methods
     print(issubclass(BlackGrouse, InformalInterfaceICanFly))
     # Lists the Superclasses of a given class by utilising Python's Method Resolution Order algorithm
@@ -64,9 +71,9 @@ def concrete_class_method_overrides_single_informal_interface_method():
 
 
 def concrete_class_method_overrides_all_formal_interface_methods():
-    ea = HazelGrouse(2, "Haze")
-    ea.get_average_hop_height()
-    ea.get_max_hop_height()
+    hg = HazelGrouse(2, "Haze")
+    hg.get_average_hop_height()
+    hg.get_max_hop_height()
     """
     If you don't override both methods in the Formal interface then you will get
     TypeError: Can't instantiate abstract class Eagle with abstract 

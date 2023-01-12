@@ -6,6 +6,7 @@ In the Python console demonstrate:
     1 == 1 or 2 == 1
 """
 
+
 class LogicalOperators:
     a = 5
     b = 6

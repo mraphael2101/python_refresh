@@ -3,6 +3,7 @@ from random import shuffle
  - Typically a Python script contains several functions interacting with each other
 """
 
+
 def shuffle_list(my_list):
     shuffle(my_list)
     return my_list

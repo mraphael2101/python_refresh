@@ -28,6 +28,8 @@ Pass by reference:
    and any operation performed on the parameter affects the actual value. It alters 
    the value in both function and globally
 """
+
+
 def function(val):
     val.append('B')
     print("Inside function call", val)

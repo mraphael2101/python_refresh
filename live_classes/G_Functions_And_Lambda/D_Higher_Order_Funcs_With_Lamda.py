@@ -7,11 +7,11 @@ A lambda function can be a higher-order function by taking a function (normal or
 argument like in the following contrived example
 """
 
-high_ord_func = lambda x, func: x + func(x)     # higher order function declaration
+high_ord_func = lambda x, func: x + func(x)  # higher order function declaration
 
 # Pay attention to the syntax -> Substitute the value of x into x + func(x)
 result = high_ord_func(2, lambda x: x * x)
-print(result)    # Prints 6
+print(result)  # Prints 6
 
 result = high_ord_func(2, lambda x: x + 3)
-print(result)   # Prints 7
+print(result)  # Prints 7

@@ -12,8 +12,8 @@ def check_even_list(num_list):
     return False
 
 
-# print(check_even_list([1, 3, 5, 7]))
-# print(check_even_list([1, 3, 5, 7, 2]))
+print(check_even_list([1, 3, 5, 7]))
+print(check_even_list([1, 3, 5, 7, 2]))
 
 
 def get_even_no_list(num_list: object) -> []:

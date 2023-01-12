@@ -1,17 +1,17 @@
 from random import shuffle, randint  # from random library import functions
 
 # Built-in function to shuffle values in a list
-# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# shuffle(my_list)
-# print(my_list)
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+shuffle(my_list)
+print(my_list)
 
 # Built-in function to generate a random number between 0 and 100
-# print(randint(0, 100))
+print(randint(0, 100))
 
 # Built-in function to capture arguments from the CLI
 # Returns a String. You can cast the result by wrapping it in e.g. float(result) etc
-# result = input('What is your name? ')
-# print("Hello " + result)
+result = input('What is your name? ')
+print("Hello " + result)
 
 
 """

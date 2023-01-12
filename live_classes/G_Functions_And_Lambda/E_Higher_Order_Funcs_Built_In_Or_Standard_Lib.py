@@ -22,13 +22,14 @@ include map(), filter(), functools.reduce(), as well as key functions like sort(
 min(), and max()
 """
 
-# result = list(map(lambda x: x.upper(), ['cat', 'dog', 'cow']))
-# print(result)
+result = list(map(lambda x: x.upper(), ['cat', 'dog', 'cow']))
+print(result)
 
-# res = list(filter(lambda x: 'o' in x, ['cat', 'dog', 'cow']))
-# print(res)
+res = list(filter(lambda x: 'o' in x, ['cat', 'dog', 'cow']))
+print(res)
 
 # Converts a list into a string
 from functools import reduce
+
 resu = reduce(lambda x, y: f'{x} | {y}', ['cat', 'dog', 'cow'])
 print(resu)

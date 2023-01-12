@@ -11,12 +11,12 @@ There are three keywords which can be associated with loops which are:
     pass     -> Does nothing
 """
 
-# x = 1
-# while x < 5:  # Condition must evaluate to true to enter into the loop
-#     print(f'The current value of x is {x}')
-#     x = x + 1
-# else:
-#     print(f'x is not less than {x}. Hence, this statement was printed')
+x = 1
+while x < 5:  # Condition must evaluate to true to enter into the loop
+    print(f'The current value of x is {x}')
+    x = x + 1
+else:
+    print(f'x is not less than {x}. Hence, this statement was printed')
 
 
 """

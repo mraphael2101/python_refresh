@@ -31,7 +31,7 @@ if __name__ == '__main__':
     print(dict_with_objs[1])
     print(dict_with_objs.keys())  # Returns all the keys in a dictionary
     print(dict_with_objs.values())  # Returns all the values in a dictionary
-    # print(nested_dict['key_1'][0])                      # Returns [{'nest_key': ['a', ['b']]}]
-    # print(nested_dict['key_1'][0]['nest_key'][0][0])    # Returns a
-    # print(nested_dict['key_1'][0]['nest_key'][1][0])    # Returns b
-    # print(nested_dict['key_1'][0]['nest_key'][1][1])    # Returns b
+    print(nested_dict['key_1'][0])                      # Returns [{'nest_key': ['a', ['b']]}]
+    print(nested_dict['key_1'][0]['nest_key'][0][0])    # Returns a
+    print(nested_dict['key_1'][0]['nest_key'][1][0])    # Returns b
+    print(nested_dict['key_1'][0]['nest_key'][1][1])    # Returns b

@@ -6,6 +6,7 @@ In the Python console demonstrate:
      2.0 == 2
 """
 
+
 class ComparisonOperators:
     a = 5
     b = 6

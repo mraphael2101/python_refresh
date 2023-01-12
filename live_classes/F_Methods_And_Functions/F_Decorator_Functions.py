@@ -7,11 +7,13 @@ In the example, some_decorator() is a function that adds
 a behavior to decorated_function()
 """
 
+
 def some_decorator(f):
     def wraps(*args):
         print(f"Calling function '{f.__name__}'")
         return f(args)
     return wraps
+
 
 @some_decorator     # This decorator adds an extra behavior
 def decorated_function(x):
@@ -20,6 +22,7 @@ def decorated_function(x):
 
 def main():
     decorated_function('Some value')
+
 
 if __name__ == "__main__":
     main()

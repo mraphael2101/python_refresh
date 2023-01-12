@@ -23,7 +23,7 @@ class Animal(ABC):
     """
      Prefixing a variable name with:
         __ denotes it as a private access modifier
-        _ denotes it as a protected access modifier (available to sub-classes)
+        _ denotes it as a protected access modifier (available to subclasses)
         specifying nothing denotes it as a public access modifier
     """
     __age = None

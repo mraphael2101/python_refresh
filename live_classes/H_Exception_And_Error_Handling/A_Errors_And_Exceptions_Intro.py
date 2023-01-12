@@ -17,6 +17,8 @@ An exception is an object
 We can define our own exceptions if we want to
 
 All exceptions inherit from a built-in class called BaseException
+
+Read exceptions from the stacktrace bottom-up
 """
 
 def error_1():

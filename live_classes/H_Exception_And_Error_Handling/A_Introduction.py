@@ -1,4 +1,9 @@
 """
+This class will focus on the details of raising, handling, defining, and manipulating exceptions
+
+Exceptions are a powerful way to communicate unusual circumstances or error conditions
+without requiring a calling function to explicitly check return values
+
 In Python, there is a subtle difference between an error and an exception
 
 Errors cannot be handled, while Python exceptions can be handled at runtime

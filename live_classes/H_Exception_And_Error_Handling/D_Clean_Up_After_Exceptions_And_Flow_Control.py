@@ -12,6 +12,9 @@ If no exception is raised then both the else and finally statements are executed
 Examples of when you might use the finally block:
   - Cleaning up an open database connection
   - Closing an open file
+
+Exception handling code is easier to read and maintain than utilising a combination
+of if, elif, and else statements i.e. leveraging the exception hierarchy, else, and finally
 """
 
 import random

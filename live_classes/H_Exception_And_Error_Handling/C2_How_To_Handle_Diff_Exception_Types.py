@@ -7,7 +7,7 @@ Only the first matching exception clause is run, even if more than one of them f
 """
 
 
-def division_calc(arg1):
+def division_calculation(arg1):
     try:
         if arg1 == 42:
             raise ValueError("42 is an unlucky number for some")
@@ -15,7 +15,7 @@ def division_calc(arg1):
         return 100 / arg1
 
     except ZeroDivisionError:
-        return "ZeroDivisionError -> Mathematicians are always trying to find answers to interesting math problems"
+        return "ZeroDivisionError -> You can't divide by zero"
     except TypeError:
         return "TypeError -> Enter a numerical value"
     except ValueError as e:
@@ -26,4 +26,4 @@ def division_calc(arg1):
 # The code will continue to execute after an exception occurs and is handled
 for val in (0, "d", 50.1, 42):
     print("Testing the value -> {}".format(val))
-    print(division_calc(val))
+    print(division_calculation(val))

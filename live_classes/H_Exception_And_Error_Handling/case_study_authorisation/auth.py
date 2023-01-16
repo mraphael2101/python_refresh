@@ -1,25 +1,6 @@
 import hashlib
-# Authentication & Authorisation System
 
-
-class User:
-    def __init__(self, username, password):
-        """ Create a new user object. The password
-        will be encrypted before storing."""
-        self.username = username
-        self.password = self._encrypt_pw(password)
-        self.is_logged_in = False
-
-    def _encrypt_pw(self, password):
-        """ Encrypt the password with the username and
-        return the encrypted code in hexadecimal format"""
-        hash_string = self.username + password
-        hash_string = hash_string.encode("uft8")
-        return hashlib.sha256(hash_string).hexdigest()
-
-    def check_password(self, password) -> bool:
-        encrypted = self._encrypt_pw(password)
-        return encrypted == self.password
+# An Authentication and Authorisation framework
 
 
 class AuthException(Exception):
@@ -37,10 +18,52 @@ class PasswordTooShort(AuthException):
     pass
 
 
+class InvalidUsername(AuthException):
+    pass
+
+
+class InvalidPassword(AuthException):
+    pass
+
+
+class PermissionError(Exception):
+    pass
+
+
+class NotLoggedInError(AuthException):
+    pass
+
+
+class NotPermittedError(AuthException):
+    pass
+
+
+class User:
+    def __init__(self, username, password):
+        """Create a new user object. The password
+        will be encrypted before storing."""
+        self.username = username
+        self.password = self._encrypt_pw(password)
+        self.is_logged_in = False
+
+    def _encrypt_pw(self, password):
+        """Encrypt the password with the username and return
+        the sha digest."""
+        hash_string = self.username + password
+        hash_string = hash_string.encode("utf8")
+        return hashlib.sha256(hash_string).hexdigest()
+
+    def check_password(self, password):
+        """Return True if the password is valid for this
+        user, false otherwise."""
+        encrypted = self._encrypt_pw(password)
+        return encrypted == self.password
+
+
 class Authenticator:
     def __init__(self):
-        """ Construct an authenticator to manage users
-        logging in and out"""
+        """Construct an authenticator to manage
+        users logging in and out."""
         self.users = {}
 
     def add_user(self, username, password):
@@ -68,35 +91,27 @@ class Authenticator:
         return False
 
 
-class InvalidUsername(AuthException):
-    pass
-
-
-class InvalidPassword(AuthException):
-    pass
-
-
 class Authorizor:
     def __init__(self, authenticator):
         self.authenticator = authenticator
         self.permissions = {}
 
     def add_permission(self, perm_name):
-        """ Create a new permission that users can be
-        added to """
+        """Create a new permission that users
+        can be added to"""
         try:
             perm_set = self.permissions[perm_name]
         except KeyError:
             self.permissions[perm_name] = set()
         else:
-            raise PermissionError2("Permission Exists")
+            raise PermissionError("Permission Exists")
 
     def permit_user(self, perm_name, username):
-        """ Grant the given permission to the user"""
+        """Grant the given permission to the user"""
         try:
             perm_set = self.permissions[perm_name]
         except KeyError:
-            raise PermissionError2("Permission does not exist")
+            raise PermissionError("Permission does not exist")
         else:
             if username not in self.authenticator.users:
                 raise InvalidUsername(username)
@@ -108,7 +123,7 @@ class Authorizor:
         try:
             perm_set = self.permissions[perm_name]
         except KeyError:
-            raise PermissionError2("Permission does not exist")
+            raise PermissionError("Permission does not exist")
         else:
             if username not in perm_set:
                 raise NotPermittedError(username)
@@ -116,17 +131,17 @@ class Authorizor:
                 return True
 
 
-class PermissionError2(Exception):
-    pass
-
-
-class NotLoggedInError(AuthException):
-    pass
-
-
-class NotPermittedError(AuthException):
-    pass
-
-
 authenticator = Authenticator()
+
 authorizor = Authorizor(authenticator)
+
+"""
+To demo the program's behaviour enter the below commands in the interpreter:
+1) import live_classes.H_Exception_And_Error_Handling.case_study_authorisation.auth as auth
+2) auth.authenticator.add_user("joe", "joepassword")
+3) auth.authorizor.add_permission("paint")
+4) auth.authorizor.check_permission("paint", "joe")
+5) auth.authenticator.is_logged_in("joe")
+6) auth.authenticator.login("joe", "joepassword")
+7) auth.authorizor.check_permission("paint", "joe")
+"""

@@ -2,8 +2,6 @@
 In Python, most exceptions are subclasses of the exception class but this is not true
 of all exceptions
 
-class Exception inherits from the class BaseException
-
 Exceptions must extend BaseExceptions or one of its subclasses
 
 SystemExit -> is raised whenever a program exits naturally typically as we called sys.exit func

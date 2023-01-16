@@ -1,5 +1,5 @@
 """
-Most exceptions are subclasses of the exception class but this is not true
+In Python, most exceptions are subclasses of the exception class but this is not true
 of all exceptions
 
 class Exception inherits from the class BaseException

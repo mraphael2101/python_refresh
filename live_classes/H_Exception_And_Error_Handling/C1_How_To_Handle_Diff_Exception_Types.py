@@ -1,7 +1,6 @@
 """
 A basic example which demonstrates raising/throwing a General Exception and then
-catching it. The code flow continues after the exception is caught, after the
-except clause
+catching it. The code flow continues after the exception is caught
 """
 
 
@@ -11,8 +10,8 @@ def no_return():
     print("This line of code will never execute")
 
 
-try:
-    no_return()
-except:
-    print("The Exception was caught here")
-print("Code flow continues from here onwards...")
+# try:
+no_return()
+# except:
+#     print("The Exception was caught here")
+# print("Code flow continues from here onwards...")

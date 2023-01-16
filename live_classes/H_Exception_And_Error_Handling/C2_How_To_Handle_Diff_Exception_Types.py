@@ -1,9 +1,9 @@
 """
-We should catch specific types of Exceptions - we might have a code that raises both
-TypeError and ZeroDivisionError. We might want to catch ZeroDivisionError but let
-TypeError propagate
+- We should catch specific types of Exceptions and not generic ones
 
-Only the first matching exception clause is run, even if more than one of them fits
+- Only the first matching exception clause is run, even if more than one of them fits
+
+- We might want to catch ZeroDivisionError but let TypeError propagate
 """
 
 

@@ -8,10 +8,10 @@ Exceptions should be easy to handle and easy to see how to fix the error
 
 class InvalidWithdrawal(Exception):
 
-    # The __init__ method is designed to accept any arguments and to store them
-    # as a tuple in an attribute named args
+    # The __init__ method is designed to accept any arguments and to
+    # store them as a tuple in an attribute named args
     def __init__(self, balance, amount):
-        super().__init__(f"account doesn't have ${amount}")
+        super().__init__(f"account doesn't have £{amount}")
         self.amount = amount
         self.balance = balance
 
@@ -29,4 +29,4 @@ try:
 except InvalidWithdrawal as e:
     print("I'm sorry, but your withdrawal is "
           "more than your balance by "
-          f"${e.overage()}")
+          f"£{e.overage()}")

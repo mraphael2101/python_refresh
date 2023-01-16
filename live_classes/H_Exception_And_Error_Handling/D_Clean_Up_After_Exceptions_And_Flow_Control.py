@@ -1,5 +1,5 @@
 """
-You need to know how to execute code regardless of whether or not an exception has occurred
+You should know how to execute code regardless of whether or not an exception has occurred
 
 Should be able to specify code that should be executed only if an exception does not occur
 
@@ -19,7 +19,9 @@ of if, elif, and else statements i.e. leveraging the exception hierarchy, else, 
 
 import random
 
-some_exceptions = [ValueError, TypeError, IndexError, None]
+# some_exceptions = [ValueError, TypeError, IndexError, None]
+some_exceptions = [ValueError, TypeError, IndexError]
+# some_exceptions = [None]
 
 try:
     choice = random.choice(some_exceptions)

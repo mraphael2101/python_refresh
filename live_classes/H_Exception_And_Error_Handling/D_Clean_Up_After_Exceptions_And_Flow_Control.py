@@ -19,9 +19,7 @@ of if, elif, and else statements i.e. leveraging the exception hierarchy, else, 
 
 import random
 
-# some_exceptions = [ValueError, TypeError, IndexError, None]
-some_exceptions = [ValueError, TypeError, IndexError]
-# some_exceptions = [None]
+some_exceptions = [ValueError, TypeError, IndexError, None]
 
 try:
     choice = random.choice(some_exceptions)

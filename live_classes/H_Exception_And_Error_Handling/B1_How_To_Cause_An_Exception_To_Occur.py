@@ -26,9 +26,9 @@ def error_3():
 
 
 def main():
-    # error_1()
+    error_1()
     # error_2()
-    error_3()
+    # error_3()
     # error_4()
 
 

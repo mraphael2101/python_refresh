@@ -10,8 +10,8 @@ def division_calc(arg1):
 
     # Doing this allows us to access the argument(s) that were passed
     # in if an exception was thrown
-    except Exception as e:
-        print(e.args)
+    except Exception as ex:
+        print(ex.args)
 
 
 division_calc("s")

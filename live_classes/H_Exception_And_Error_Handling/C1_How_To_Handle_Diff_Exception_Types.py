@@ -10,8 +10,8 @@ def no_return():
     print("This line of code will never execute")
 
 
-# try:
-no_return()
-# except:
-#     print("The Exception was caught here")
-# print("Code flow continues from here onwards...")
+try:
+    no_return()
+except:
+    print("The Exception was caught here")
+print("Code flow continues from here onwards...")

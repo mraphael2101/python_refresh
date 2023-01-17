@@ -5,12 +5,14 @@ potential failures that would otherwise cause a program to stop in an uncontroll
 
 Exceptions are a powerful way to communicate unusual circumstances or error conditions
 without requiring a calling function to explicitly check return values
----------------
-
 
 Errors are unrecoverable, Exceptions are routine:
+---------------
+"""
+
+"""
   -> Languages like Java build the distinction into the language
-  -> Languages like Python treat them as synonyms (there is a
+  -> Python treat them as synonyms (there is a
      subtle difference between an error and an exception)
 
 An Error might indicate critical problems that a reasonable application should NOT try to catch,

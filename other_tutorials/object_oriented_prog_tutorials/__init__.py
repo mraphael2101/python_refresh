@@ -1,24 +1,24 @@
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.Bird import Bird
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.BlackGrouse import BlackGrouse
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.HybridPheasant \
+from other_tutorials.object_oriented_prog_tutorials.animals_and_behaviours_case_study.classes.Bird import Bird
+from other_tutorials.object_oriented_prog_tutorials.animals_and_behaviours_case_study.classes.BlackGrouse import BlackGrouse
+from other_tutorials.object_oriented_prog_tutorials.animals_and_behaviours_case_study.classes.HybridPheasant \
     import HybridPheasant
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.HazelGrouse import HazelGrouse
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interfaces.ICanFly \
+from other_tutorials.object_oriented_prog_tutorials.animals_and_behaviours_case_study.classes.HazelGrouse import HazelGrouse
+from other_tutorials.object_oriented_prog_tutorials.animals_and_behaviours_case_study.interfaces.ICanFly \
     import InformalInterfaceICanFly
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interfaces.IHop import FormalInterfaceIHop
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.inheritance_constructoroverloading_overriding.Car import Car, \
+from other_tutorials.object_oriented_prog_tutorials.animals_and_behaviours_case_study.interfaces.IHop import FormalInterfaceIHop
+from other_tutorials.object_oriented_prog_tutorials.inheritance_constructoroverloading_overriding.Car import Car, \
     print_base_class_method
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.inheritance_constructoroverloading_overriding.Ford import Ford
+from other_tutorials.object_oriented_prog_tutorials.inheritance_constructoroverloading_overriding.Ford import Ford
 
 
 def main():
-    constructor_overloading_demo()
-    encapsulation_demo()
-    inheriting_from_an_abstract_class_and_method_overriding_and_overloading()
-    inheriting_from_a_concrete_class_and_method_overriding()
+    # constructor_overloading_demo()
+    # encapsulation_demo()
+    # inheriting_from_an_abstract_class_and_method_overriding_and_overloading()
+    # inheriting_from_a_concrete_class_and_method_overriding()
     concrete_class_method_overrides_single_informal_interface_method()
     concrete_class_method_overrides_all_formal_interface_methods()
-    multi_level_inheritance_via_classes()
+    # multi_level_inheritance_via_classes()
 
 
 def constructor_overloading_demo():

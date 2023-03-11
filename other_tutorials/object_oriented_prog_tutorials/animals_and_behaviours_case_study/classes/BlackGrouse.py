@@ -1,5 +1,5 @@
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.Bird import Bird
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.interfaces.ICanFly import \
+from other_tutorials.object_oriented_prog_tutorials.animals_and_behaviours_case_study.classes.Bird import Bird
+from other_tutorials.object_oriented_prog_tutorials.animals_and_behaviours_case_study.interfaces.ICanFly import \
     InformalInterfaceICanFly
 
 

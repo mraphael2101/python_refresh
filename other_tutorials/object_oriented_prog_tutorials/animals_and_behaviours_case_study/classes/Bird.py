@@ -1,4 +1,4 @@
-from other_tutorials.B_Object_Oriented_Prog_Tutorials.animals_and_behaviours.classes.Animal import Animal
+from other_tutorials.object_oriented_prog_tutorials.animals_and_behaviours_case_study.classes.Animal import Animal
 
 """
 - A class that is derived from an abstract class cannot be instantiated unless

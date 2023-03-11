@@ -1,4 +1,4 @@
-from other_tutorials.B_Object_Oriented_Prog_Tutorials import Car
+from other_tutorials.object_oriented_prog_tutorials import Car
 
 
 # Below, class Ford is inheriting from class Car, and we can say that a Ford 'is a' Car
